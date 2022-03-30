@@ -1,0 +1,21 @@
+// 404-error-section
+
+.error-section {
+  background-color: $primary;
+  padding: 4rem 0;
+  h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: $color-white;
+  }
+  p {
+    color: $color-white;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+// address-section
+
+// footer

@@ -1,0 +1,110 @@
+/* Global Styles */
+
+/* General */
+
+body {
+  font-size: 1.125rem;
+  font-family: $font;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  //   padding: 0 1.5rem;
+  //   border: 1px solid black;
+}
+
+/* Anchor Decoration */
+a {
+  text-decoration: none;
+}
+
+/* Image Adjust */
+.full-width {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Positions */
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-50 {
+  z-index: 50;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: none;
+  background-color: $primary;
+  a {
+    color: white;
+  }
+}
+
+.btn-secondary {
+  background-color: white;
+  border: 1px solid $primary;
+  a {
+    color: $primary;
+  }
+}
+.btn-tertiary {
+  border: 1px solid #f5cace;
+  background-color: $primary;
+  a {
+    color: #f5cace;
+  }
+}
+.btn-tertiary-2 {
+  border: 1px solid whitesmoke;
+  background-color: $primary;
+  a {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-weight: lighter;
+  }
+}

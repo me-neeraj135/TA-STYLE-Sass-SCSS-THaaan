@@ -1,0 +1,281 @@
+header {
+  .upper-header {
+    background-color: $primary;
+    padding: 0.5rem 0;
+    ul {
+      li {
+        i {
+          color: $color-white;
+        }
+        margin-right: 0.5rem;
+        a {
+          color: $color-white;
+          margin-left: 0.2rem;
+        }
+      }
+    }
+    .media-icon {
+      li {
+        i {
+          width: 1.2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  .lower-header {
+    background-color: $lower-header-color;
+    // padding: 2rem 0;
+  }
+  .uni-tech-box {
+    li {
+      padding: 1.2rem 0;
+    }
+    a {
+      .uni {
+        color: $primary;
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: capitalize;
+      }
+      .tech {
+        color: $secondary;
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .home-box {
+    li {
+      padding: 1.2rem 1.5rem;
+      a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $secondary;
+      }
+      margin-left: 0.2rem;
+      &:hover {
+        background-color: $primary;
+        a {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .page-box {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    padding: 0 1rem;
+    &:hover {
+      color: $color-white;
+      .dropDown-content {
+        display: block;
+        a {
+          color: $secondary;
+        }
+      }
+    }
+    .fa-angle-down {
+      width: 1rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .dropDown-content {
+    width: 150%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    li {
+      margin-left: 0;
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+// about-section
+
+.about-section {
+  background-color: $primary;
+  padding: 4rem 0;
+  h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: $color-white;
+  }
+  p {
+    color: $color-white;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+
+// about-us-section
+.about-us-section {
+  padding: $all-section-padding;
+  .about-us-div {
+    span {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $primary;
+      text-transform: capitalize;
+    }
+    h2 {
+      text-align: justify;
+      font-size: 2.5rem;
+    }
+    p {
+      color: $text-color;
+    }
+  }
+  .vision-container {
+    padding: 5rem 0;
+  }
+  .tech-vision-box {
+    div {
+      margin: 1rem 0;
+    }
+    .fa-solid {
+      font-size: 4rem;
+      color: $secondary;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $secondary;
+      text-transform: capitalize;
+    }
+    p {
+      color: $text-color;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+}
+
+// our-team-section
+.our-team-section {
+  padding: $all-section-padding;
+  background-color: $lower-header-color;
+  .h4-para-box {
+    text-align: center;
+    h4 {
+      font-size: 3rem;
+      font-weight: 900;
+      text-transform: capitalize;
+      color: $secondary;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $secondary;
+    }
+  }
+  .team-container {
+    padding: 5rem 0 0 0;
+  }
+  .team-box {
+    border-radius: 0.1rem;
+    box-shadow: 0px 0px 2px 1px rgba(175, 170, 170, 0.226);
+    background-color: $color-white;
+    .name-post-box {
+      text-align: center;
+      padding: 2rem;
+      p {
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        color: $secondary;
+        font-weight: 600;
+      }
+      span {
+        text-transform: uppercase;
+        color: $primary;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// best solution-section
+
+.best-solution-section {
+  padding: 8rem 0;
+  .solution-box {
+    text-align: center;
+    h4 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      text-transform: capitalize;
+      color: $secondary;
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: $text-color;
+      margin: 3rem 0;
+    }
+    button {
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+  }
+}
+
+// our-client section
+.our-client-section {
+  background-color: $tertiary;
+  padding: $all-section-padding;
+  .client-box {
+    div {
+      margin: 3rem 0;
+      span {
+        img {
+          -webkit-filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  background-color: #343a40;
+  padding: $all-section-padding;
+  a {
+    color: $text-color;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  .lower-footer {
+    text-align: center;
+    color: $text-color;
+    padding: 3rem 0 0 0;
+    b {
+      font-weight: 600;
+      color: hsl(0, 3%, 81%);
+    }
+  }
+  .upper-footer {
+    i {
+      color: $text-color;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+    .follow-us-box {
+      li {
+        a {
+          i {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
