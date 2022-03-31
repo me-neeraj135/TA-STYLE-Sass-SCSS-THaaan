@@ -1,0 +1,136 @@
+@import "variable";
+@import "reset";
+@import "global";
+@import "flex";
+@import "home";
+@import "about";
+@import "services";
+@import "contact";
+@import "error";
+@import "pricing";
+
+.bor-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  .bor-icon {
+    display: block;
+  }
+  .sm-nav {
+    position: relative;
+  }
+  .sm-home-box {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    color: white;
+  }
+  .fa-bars {
+    color: white;
+  }
+  .bor-icon {
+    background-color: $primary;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 12%;
+    right: 5%;
+    z-index: 999;
+    border-radius: 0.2rem;
+  }
+  #toggle:checked ~ ul {
+    visibility: visible;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(3, 6, 61, 0.905);
+    height: 100%;
+    z-index: 888;
+    flex-direction: column;
+    li {
+      display: inline-block;
+      width: 20%;
+      a {
+        color: white;
+      }
+    }
+
+    .sm-drop-ul {
+      width: 100%;
+      background-color: gray;
+
+      li {
+        color: white;
+        width: 90%;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .sm-hero-section {
+    background-image: url("../assets/media/banner-1.jpg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+  }
+  .sm-padding {
+    padding: 0rem 0.2rem;
+  }
+
+  .sm-more-padding {
+    padding-bottom: 25rem;
+  }
+  .sm-text-align {
+    text-align: center;
+  }
+
+  .sm-margin {
+    margin: 1rem 0;
+  }
+
+  .sm-more-margin {
+    margin-top: 4rem;
+  }
+  .sm-flex {
+    display: flex;
+  }
+
+  .sm-flex-column {
+    flex-direction: column;
+  }
+  .sm-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .sm-align-center {
+    align-items: center;
+  }
+  .sm-flex-start {
+    justify-content: start;
+  }
+  .sm-flex-align {
+    align-items: flex-start;
+  }
+  .sm-justify-between {
+    align-content: space-between;
+  }
+  .sm-flex-100 {
+    flex: 0 1 100%;
+  }
+  .sm-flex-30 {
+    flex: 0 1 30%;
+  }
+}
